@@ -22,9 +22,12 @@ AUTHOR_FEED_RSS = None
 DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 
-THEME = '/Users/Weitzenfeld/PycharmProjects/pelican-themes/pelican-octopress-theme'
-PLUGIN_PATHS = ['/Users/Weitzenfeld/PycharmProjects/pelican-plugins']
-PLUGINS = ['assets', 'sitemap', 'gravatar', 'pelican-ipynb.markup']
+THEME = '/Users/Weitzenfeld/PycharmProjects/pelican-themes/octopress'
+PLUGIN_PATHS = ['./plugins',
+                '/Users/Weitzenfeld/PycharmProjects/pelican-plugins',
+                ]
+PLUGINS = ['assets', 'sitemap', 'gravatar', 'ipynb.markup']
+IGNORE_FILES = [".ipynb_checkpoints"]
 
 MARKUP = ('md', 'ipynb')
 
